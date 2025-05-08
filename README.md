@@ -1,6 +1,6 @@
 # Aegis-git
 
-CSO-Git is a GitBash portable POSIX augmented with the MSYS2 PacMan package manager.
+Aegis-Git is a GitBash portable POSIX augmented with the MSYS2 PacMan package manager.
 
 ![gitbash-pacman](gitbash-pacman.png)
 
