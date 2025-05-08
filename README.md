@@ -1,8 +1,10 @@
 # Aegis-git
 
+CSO-Git is a GitBash portable POSIX augmented with the MSYS2 PacMan package manager.
+
 ![gitbash-pacman](gitbash-pacman.png)
 
-Aegis-Git is a GitBash portable POSIX augmented with the MSYS2 PacMan package manager.
+
 
 It is based on GitBash, based on MSysGit, based on Msys2, itself derived from Cygwin.
 
@@ -61,11 +63,7 @@ We can clone its `pacman` package management facility and reintegrate it into gi
 
 *Depending on the institution or individual, this may or my not be an Administrator installation*.
 
-*IMPORTANT Uninstall any other competing variants of GitBash, MSys, SysGit, or GitForWindows*.
-
-Our objective is to get a working `pacman` package manager and interpreted and compiled languages.
-
-Modern package managers use SSL/TLS and GPG keyrings to securely pull packages from distributions.
+*IMPORTANT Uninstall any other competing variants of GitBash, MSys, SysGit, or any GitForWindows*.
 
 .
 
@@ -86,6 +84,10 @@ Clear old git and cache:
 
 # GitBash
 
+Our objective is to get a working `pacman` package manager and interpreted and compiled languages.
+
+Modern package managers use SSL/TLS and GPG keyrings to securely pull packages from distributions.
+
 The Git OpenSSL libraries must be able to talk to Windows Credential manager and pull certificates.
 
 For this reason, on a managed desktop machine it is best to install Git with the default settings.
@@ -100,11 +102,9 @@ install gitbash:
 
 # Python
 
-Mixed Python / Pip environments on Windows can be quite problematic with SSL/TLS and `Pyenv` `pipenv`.
+Python and pip in particular are very temperamental with mixed environments and mixed SSL/TLS bindings.
 
 The Python pip package manager must be able to talk to Windows Credential manager and pull certificates.
-
-Python and pip in particular are very temperamental with mixed environments and mixed SSL/TLS bindings.
 
 For this reason, on a managed desktop, it is best to install a managed machine-scoped Python for Windows. 
 
@@ -121,9 +121,9 @@ install python:
 
 ## Preparation
 
-To get pacman working we to add the gpg key for the git-sdk-64 distribution in the keyring.
+For pacman to work we must add the gpg key for the git-sdk-64 distribution in the keyring.
 
-It turns out it has the same author and the same key as the git-for-windows distribution!
+It turns out it has the same author and the same key as the git-for-windows distribution.
 
 
 ```bash
@@ -178,17 +178,13 @@ We can now run pacman normally.
 
 
 
-# Pass
-
-# Extensions
-
-Add pass (POSIX password-store) and tree and configure with ssh, ssl, gpg, tree.
-
-Add MSYS2 MinGW64 standard development toolchain (GNU autotool, glibc, gcc, etc).
-
 
 
 # Attribution
+
+
+This project is a fork of [Aegis-Git](https://github.com/korningf/aegis-git).
+
 
 
 *Stephane Korning* (stefuss@yahoo.com) for the idea and impetus to port pacman to gitbash. 
@@ -211,5 +207,4 @@ The host of developers having made *Git*, *Msys*, *Cygwin*, *MinGW*, *GNU* and *
 # License
 
 Creative-Commons,  Attribution, NonCommercial, ShareAlike 4.0
-
 
